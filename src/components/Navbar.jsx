@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useContext } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
 import emailjs from "@emailjs/browser";
@@ -23,8 +23,6 @@ const Navbar = ({ setScrollToBlinds }) => {
   const autocompleteRef = useRef(null);
   const [address, setAddress] = useState("");
 
-  const { cart } = useContext(CartContext);
-
   // 스크롤 감지
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 10);
@@ -34,27 +32,20 @@ const Navbar = ({ setScrollToBlinds }) => {
 
   // Google Autocomplete
   useEffect(() => {
-    if (!isFormOpen) return;
-    if (!window.google) return;
-    const inputEl = addressInputRef.current;
-    if (!inputEl) return;
+    if (!isFormOpen || !window.google) return;
     if (autocompleteRef.current) return;
 
-    const ac = new window.google.maps.places.Autocomplete(inputEl, {
+    const ac = new window.google.maps.places.Autocomplete(addressInputRef.current, {
       types: ["geocode"],
       componentRestrictions: { country: "au" },
-      fields: [
-        "formatted_address",
-        "geometry",
-        "place_id",
-        "address_components",
-      ],
+      fields: ["formatted_address", "geometry", "place_id", "address_components"],
     });
+
     autocompleteRef.current = ac;
 
     const listener = ac.addListener("place_changed", () => {
       const place = ac.getPlace();
-      setAddress(place?.formatted_address || inputEl.value || "");
+      setAddress(place?.formatted_address || addressInputRef.current.value || "");
     });
 
     return () => {
@@ -94,9 +85,7 @@ const Navbar = ({ setScrollToBlinds }) => {
       // Home 클릭 시
       if (window.location.pathname !== "/") {
         navigate("/");
-        setTimeout(() => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }, 50);
+        setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 50);
       } else {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
@@ -104,32 +93,27 @@ const Navbar = ({ setScrollToBlinds }) => {
       // Our Blinds 클릭 시
       if (window.location.pathname !== "/") {
         navigate("/");
-        setTimeout(() => setScrollToBlinds(true), 50);
+        setTimeout(() => setScrollToBlinds(true), 50); // ✅ Home에서 스크롤
       } else {
         setScrollToBlinds(true);
       }
     } else {
       navigate(path);
     }
-    setIsMenuOpen(false); // 모바일 메뉴 닫기
+    setIsMenuOpen(false);
   };
 
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full flex items-center 
-          justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all 
-          duration-500 z-50 ${
-  isScrolled
-    ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4"
-    : "bg-gray-800 text-white py-4 md:py-6"
-}`}
-
+        className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${
+          isScrolled
+            ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4"
+            : "bg-gray-800 text-white py-4 md:py-6"
+        }`}
       >
         {/* Logo 버튼 */}
-        <button
-          onClick={() => handleNavClick("/")}
-        >
+        <button onClick={() => handleNavClick("/")}>
           <img
             src={assets.kaiblindslogo}
             alt="logo"
@@ -183,10 +167,7 @@ const Navbar = ({ setScrollToBlinds }) => {
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <button
-            className="absolute top-4 right-4"
-            onClick={() => setIsMenuOpen(false)}
-          >
+          <button className="absolute top-4 right-4" onClick={() => setIsMenuOpen(false)}>
             <img src={assets.closeIcon} alt="close-menu" className="h-6.5" />
           </button>
 
@@ -214,29 +195,15 @@ const Navbar = ({ setScrollToBlinds }) => {
             <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
               <div>
                 <label className="block text-sm mb-1">Name</label>
-                <input
-                  type="text"
-                  name="from_name"
-                  className="w-full border p-2 rounded-md"
-                  required
-                />
+                <input type="text" name="from_name" className="w-full border p-2 rounded-md" required />
               </div>
               <div>
                 <label className="block text-sm mb-1">Email</label>
-                <input
-                  type="email"
-                  name="from_email"
-                  className="w-full border p-2 rounded-md"
-                  required
-                />
+                <input type="email" name="from_email" className="w-full border p-2 rounded-md" required />
               </div>
               <div>
                 <label className="block text-sm mb-1">Phone</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  className="w-full border p-2 rounded-md"
-                />
+                <input type="tel" name="phone" className="w-full border p-2 rounded-md" />
               </div>
               <div>
                 <label className="block text-sm mb-1">Address</label>
@@ -266,10 +233,7 @@ const Navbar = ({ setScrollToBlinds }) => {
               </button>
             </form>
 
-            <button
-              className="absolute top-2 right-2 text-gray-600"
-              onClick={() => setIsFormOpen(false)}
-            >
+            <button className="absolute top-2 right-2 text-gray-600" onClick={() => setIsFormOpen(false)}>
               ✕
             </button>
           </div>

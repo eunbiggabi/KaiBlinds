@@ -2,7 +2,7 @@
   "name": "kaiblinds",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/eunbiggabi/KaiBlinds",
+  "homepage": "https://eunbiggabi.github.io/KaiBlinds/",
   "type": "module",
   "scripts": {
     "dev": "vite",
