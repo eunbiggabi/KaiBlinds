@@ -69,12 +69,12 @@ const Navbar = ({ setScrollToBlinds }) => {
       )
       .then(
         () => {
-          alert("견적 요청이 전송되었습니다! 📩");
+          alert("Your quote request has been successfully submitted! 📩");
           setIsFormOpen(false);
         },
         (error) => {
           console.error(error);
-          alert("전송 실패 😢 다시 시도해주세요.");
+          alert("Oops! Something went wrong 😢 Please try again.");
         }
       );
   };

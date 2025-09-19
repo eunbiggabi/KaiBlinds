@@ -35,6 +35,17 @@ const AboutMe = () => {
           transition={{ duration: 0.7 }}
           className="bg-white shadow-xl rounded-2xl p-10 space-y-6"
         >
+           <p className="text-lg leading-relaxed text-gray-700">
+            Over the past year, I’ve worked across{" "}
+            <span className="font-semibold text-gray-900">
+              Brisbane, Sunshine Coast, and Gold Coast
+            </span>
+            , handling both{" "}
+            <span className="font-semibold text-gray-900">quotes and installations</span>. This 
+            hands-on experience has sharpened my technical skills and given me{" "}
+            <span className="font-semibold text-gray-900">a keen eye for navigating new locations efficiently.</span>{" "}
+          </p>
+
           <p className="text-lg leading-relaxed text-gray-700">
             Outside of work, I enjoy{" "}
             <span className="font-semibold text-gray-900">playing soccer and table tennis</span>{" "}
@@ -45,18 +56,6 @@ const AboutMe = () => {
             In my spare time, I love{" "}
             <span className="font-semibold text-gray-900">video editing</span> and{" "}
             <span className="font-semibold text-gray-900">spending quality time with my kids</span>.
-          </p>
-
-          <p className="text-lg leading-relaxed text-gray-700">
-            Over the past year, I’ve worked across{" "}
-            <span className="font-semibold text-gray-900">
-              Brisbane, Sunshine Coast, and Gold Coast
-            </span>
-            , handling both{" "}
-            <span className="font-semibold text-gray-900">quotes and installations</span>. This 
-            hands-on experience has sharpened my technical skills and given me{" "}
-            <span className="font-semibold text-gray-900">a keen eye for navigating new locations efficiently.</span>{" "}
-            quickly.
           </p>
 
           <p className="text-lg leading-relaxed text-gray-700">
