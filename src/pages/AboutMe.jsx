@@ -52,10 +52,10 @@ const AboutMe = () => {
             <span className="font-semibold text-gray-900">
               Brisbane, Sunshine Coast, and Gold Coast
             </span>
-            , helping families with{" "}
-            <span className="font-semibold text-gray-900">quotes and installations</span>. This
-            experience has sharpened my skills and given me{" "}
-            <span className="font-semibold text-gray-900">a keen eye for navigating new places</span>{" "}
+            , handling both{" "}
+            <span className="font-semibold text-gray-900">quotes and installations</span>. This 
+            hands-on experience has sharpened my technical skills and given me{" "}
+            <span className="font-semibold text-gray-900">a keen eye for navigating new locations efficiently.</span>{" "}
             quickly.
           </p>
 
