@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import Qualifications from "../components/Qualifications";
+import Experience from "../components/Experiences";
+import MyWork from "./MyWork";
 // import Hero from "../components/Hero";
 // import FeaturedBlinds from "../components/FeaturedBlinds";
 // import Testimonial from "../components/Testimonial";
@@ -28,6 +31,9 @@ const Home = ({ scrollToBlinds, setScrollToBlinds }) => {
         <link rel="canonical" href="https://www.niceblinds.com.au/" />
       </Helmet>
 
+      <Experience />
+      <Qualifications />
+      {/* <MyWork /> */}
       {/* 실제 화면 컴포넌트 */}
       {/* <Hero />
       <FeaturedBlinds />

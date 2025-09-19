@@ -5,6 +5,10 @@ import { Helmet } from "react-helmet";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Progress from "./components/Progress";
+import MyWork from "./pages/MyWork"
+import Blog from "./pages/Blog"
+import AboutMe from "./pages/AboutMe";
+import Footer from "./components/Footer";
 
 function App() {
   const [scrollToBlinds, setScrollToBlinds] = useState(false);
@@ -32,9 +36,11 @@ function App() {
             />
           }
         />
+        <Route path="/my_work" element={<MyWork />} />
+        <Route path="/about_me" element={<AboutMe />} />
+        {/* <Route path="/blog" element={<Blog />} /> */}
       </Routes>
-
-      <Progress />
+      <Footer />
     </BrowserRouter>
   );
 }

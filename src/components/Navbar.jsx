@@ -8,10 +8,10 @@ const Navbar = ({ setScrollToBlinds }) => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Our Blinds", path: "/our_blinds" },
-    { name: "Room Guide", path: "/room_guide" },
-    { name: "Gallery", path: "/gallery" },
-    { name: "Blog", path: "/blog" },
+    { name: "My Work", path: "/my_work" },
+    { name: "Abount Me", path: "/about_me" },
+    // { name: "Gallery", path: "/gallery" },
+    // { name: "Blog", path: "/blog" },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
