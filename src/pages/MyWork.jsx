@@ -79,7 +79,7 @@ const BlindsGallery = () => {
       <div className="w-full max-w-7xl mx-auto px-4 py-20 pt-30 pb-10">
         <div className="py-10">
           <Title
-            title="Gallary of My Work"      />
+            title="Gallary of My Work!"      />
         </div>
 
         {/* Filter Buttons */}
