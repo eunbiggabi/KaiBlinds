@@ -6,9 +6,9 @@
 // import roller5 from "./roller/roller5.jpg";
 // import roller6 from "./roller/roller6.jpg";
 // import roller7 from "./roller/roller7.jpg";
-import roller8 from "./roller/roller8.jpg";
-import roller9 from "./roller/roller9.jpg";
-import roller10 from "./roller/roller10.jpg";
+import roller8 from "./roller/roller8.JPG";
+import roller9 from "./roller/roller9.JPG";
+import roller10 from "./roller/roller10.JPG";
 
 
 // ---------------- Vertical ----------------
@@ -16,9 +16,9 @@ import roller10 from "./roller/roller10.jpg";
 // import vertical2 from "./vertical/vertical2.jpg";
 // import vertical3 from "./vertical/vertical3.jpg";
 // import vertical4 from "./vertical/vertical4.jpg";
-import vertical5 from "./vertical/vertical5.jpg";
+import vertical5 from "./vertical/vertical5.JPG";
 // import vertical6 from "./vertical/vertical6.jpg";
-import vertical7 from "./vertical/vertical7.jpg";
+import vertical7 from "./vertical/vertical7.JPG";
 // import vertical8 from "./vertical/vertical8.jpg";
 
 
@@ -26,21 +26,21 @@ import vertical7 from "./vertical/vertical7.jpg";
 // import curtain1 from "./curtain/curtain1.jpg";
 // import curtain2 from "./curtain/curtain2.jpg";
 // import curtain3 from "./curtain/curtain3.jpg";
-import curtain4 from "./curtain/curtain4.jpg";
+import curtain4 from "./curtain/curtain4.JPG";
 // import curtain5 from "./curtain/curtain5.jpg";
-import curtain6 from "./curtain/curtain6.jpg";
-import curtain7 from "./curtain/curtain7.jpg";
+import curtain6 from "./curtain/curtain6.JPG";
+import curtain7 from "./curtain/curtain7.JPG";
 // import curtain8 from "./curtain/curtain8.jpg";
 
 // ---------------- Shutter ----------------
 // import shutter1 from "./shutter/shutter1.jpg";
 // import shutter2 from "./shutter/shutter2.jpg";
 // import shutter3 from "./shutter/shutter3.jpg";
-import shutter4 from "./shutter/shutter4.jpg";
+import shutter4 from "./shutter/shutter4.JPG";
 // import shutter5 from "./shutter/shutter5.jpg";
 
 // ---------------- Awning ----------------
-import awning1 from "./awning/awning1.jpg";
+import awning1 from "./awning/awning1.JPG";
 
 // ---------------- Panel ----------------
 // import panel1 from "./panel/panel1.jpg";
