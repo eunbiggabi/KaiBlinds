@@ -40,7 +40,7 @@ const Navbar = ({ setScrollToBlinds }) => {
         "service_wj2fibl",
         "template_o6r1nft",
         formRef.current,
-        import.meta.env.VITE_EMAILJS_USER_ID
+        "Fg5pzJRE6Jolowm4Y"
       )
       .then(
         () => {
