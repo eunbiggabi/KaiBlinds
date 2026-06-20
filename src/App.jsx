@@ -9,6 +9,7 @@ import MyWork from "./pages/MyWork"
 import Blog from "./pages/Blog"
 import AboutMe from "./pages/AboutMe";
 import Footer from "./components/Footer";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const [scrollToBlinds, setScrollToBlinds] = useState(false);
@@ -38,6 +39,7 @@ function App() {
         />
         <Route path="/my_work" element={<MyWork />} />
         <Route path="/about_me" element={<AboutMe />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         {/* <Route path="/blog" element={<Blog />} /> */}
       </Routes>
       <Footer />

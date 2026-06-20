@@ -12,6 +12,7 @@ const Navbar = ({ setScrollToBlinds }) => {
     { name: "Home", path: "/" },
     { name: "My Work", path: "/my_work" },
     { name: "About Me", path: "/about_me" },
+    { name: "Dashboard", path: "/dashboard" },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
