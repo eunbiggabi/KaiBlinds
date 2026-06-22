@@ -10,7 +10,9 @@ const Dashboard = () => {
 
       </h1>
       <p className="text-xl font-bold mb-6">
-        "Retail sales dataset was transformed into a simulated Australian blinds and curtains business dataset. Additional profitability and installation metrics were engineered to perform business intelligence analysis."
+        “I designed a full end-to-end data pipeline using Python, PostgreSQL, and Power BI.
+        The system simulates a real blinds company in Brisbane with sales, quotes, and operational data.
+        Data is structured using a star schema with fact and dimension tables.”
       </p>
 
       <div className="grid grid-cols-4 gap-4 mb-6">

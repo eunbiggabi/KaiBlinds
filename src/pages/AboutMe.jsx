@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
-import { ShieldCheck, IdCard, Accessibility, Laptop } from "lucide-react"; 
 
 const AboutMe = () => {
   return (
@@ -12,110 +11,48 @@ const AboutMe = () => {
         <title>About Me | KaiBlinds</title>
         <meta
           name="description"
-          content="Learn more about me, my passion for sports, family, certifications, and IT background that make me both versatile and reliable."
+          content="Learn more about my journey to becoming a Data Analyst, combining years of hands-on business operations in Queensland with technical expertise in SQL, Python, and Power BI."
         />
         <link rel="canonical" href="https://www.kaiblinds.com.au/about" />
       </Helmet>
 
       <div className="max-w-5xl mx-auto px-6 py-20 space-y-16 pt-30">
-        {/* Heading */}
-        <motion.h1
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-gray-900 mb-6 text-center"
-        >
-          About Me
-        </motion.h1>
-
-        {/* Personal Life Section */}
+        {/* About Me Section */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="bg-white shadow-xl rounded-2xl p-10 space-y-6"
+          className="bg-white shadow-xl rounded-2xl p-10 space-y-8"
         >
-           <p className="text-lg leading-relaxed text-gray-700">
-            Over the past year, I’ve worked across{" "}
-            <span className="font-semibold text-gray-900">
-              Brisbane, Sunshine Coast, and Gold Coast
-            </span>
-            , handling both{" "}
-            <span className="font-semibold text-gray-900">quotes and installations</span>. This 
-            hands-on experience has sharpened my technical skills and given me{" "}
-            <span className="font-semibold text-gray-900">a keen eye for navigating new locations efficiently.</span>{" "}
-          </p>
-
-          <p className="text-lg leading-relaxed text-gray-700">
-            Outside of work, I enjoy{" "}
-            <span className="font-semibold text-gray-900">playing soccer and table tennis</span>{" "}
-            every week — staying active keeps me sharp both on and off the field.
-          </p>
-
-          <p className="text-lg leading-relaxed text-gray-700">
-            In my spare time, I love{" "}
-            <span className="font-semibold text-gray-900">video editing</span> and{" "}
-            <span className="font-semibold text-gray-900">spending quality time with my kids</span>.
-          </p>
-
-          <p className="text-lg leading-relaxed text-gray-700">
-            Whether it’s on the job site or in life, I bring{" "}
-            <span className="font-semibold text-gray-900">
-              dedication, adaptability, and a passion
-            </span>{" "}
-            for creating spaces people truly love.
-          </p>
-        </motion.div>
-
-        {/* Professional Background Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="bg-gradient-to-r from-gray-900 to-gray-700 text-white rounded-2xl shadow-xl p-10 space-y-8"
-        >
-          <h2 className="text-2xl font-bold mb-6">Professional Background</h2>
-
-          {/* Cards with Icons */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {/* White Card */}
-            <div className="flex items-start gap-4">
-              <ShieldCheck className="w-10 h-10 text-green-400 flex-shrink-0" />
-              <p className="text-lg leading-relaxed">
-                Holder of a{" "}
-                <span className="font-semibold">General Construction Induction Card (White Card)</span>, 
-                enabling me to work safely on construction-related sites.
-              </p>
-            </div>
-
-            {/* Blue Card */}
-            <div className="flex items-start gap-4">
-              <IdCard className="w-10 h-10 text-blue-400 flex-shrink-0" />
-              <p className="text-lg leading-relaxed">
-                Certified with a{" "}
-                <span className="font-semibold">Blue Card</span>, required for working with people under 18.
-              </p>
-            </div>
-
-            {/* NDIS Clearance */}
-            <div className="flex items-start gap-4">
-              <Accessibility className="w-10 h-10 text-purple-400 flex-shrink-0" />
-              <p className="text-lg leading-relaxed">
-                Valid{" "}
-                <span className="font-semibold">NDIS Worker Screening clearance</span>, 
-                allowing seamless work with public institutions, community projects, and women’s centers.
-              </p>
-            </div>
-
-            {/* IT Background */}
-            <div className="flex items-start gap-4">
-              <Laptop className="w-10 h-10 text-yellow-400 flex-shrink-0" />
-              <p className="text-lg leading-relaxed">
-                Background in{" "}
-                <span className="font-semibold">Information Technology</span> — including the design, development, and deployment of this very website.
-              </p>
-            </div>
+          {/* Introduction */}
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold text-gray-900 tracking-tight">
+              Bridging Business Insights with Data-Driven Solutions
+            </h2>
+            <p className="text-lg leading-relaxed text-gray-700">
+              I am an aspiring <span className="font-semibold text-gray-900">Data Analyst</span> based in Brisbane, Australia, with a core passion for transforming raw, fragmented data into clear, actionable business strategies. In today’s fast-paced market, numbers tell a story, and I thrive on being the one who translates those numbers into meaningful insights that drive growth and operational efficiency.
+            </p>
           </div>
+
+          {/* Professional Background */}
+          <p className="text-lg leading-relaxed text-gray-700">
+            My professional journey is deeply rooted in practical, hands-on business operations. Over the years, I have worked extensively across <span className="font-semibold text-gray-900">sales, custom quoting, client services, and end-to-end installation logistics</span> throughout Brisbane, the Sunshine Coast, and the Gold Coast. Operating directly on the frontline has given me an intuitive understanding of supply chains, customer behavior, and workflow bottlenecks—knowledge that cannot be learned from textbooks alone.
+          </p>
+
+          {/* Technical Toolkit */}
+          <p className="text-lg leading-relaxed text-gray-700">
+            To complement this commercial expertise, I have built a robust technical foundation. Currently, I design and implement data projects utilizing <span className="font-semibold text-gray-900">SQL, PostgreSQL, Python, Power BI, and React</span>. Rather than just writing queries, I focus on building comprehensive, end-to-end pipelines—from setting up structured databases and cleaning messy raw data to creating dynamic, interactive dashboards that empower stakeholders to make informed decisions at a glance.
+          </p>
+
+          {/* Unique Strength */}
+          <p className="text-lg leading-relaxed text-gray-700">
+            What sets me apart is this unique blend of <span className="font-semibold text-gray-900">real-world business acumen and technical problem-solving</span>. Having collaborated closely with both backend operations and front-facing clients, I understand that data analysis is only as valuable as the real-world problems it solves. I look at data through a commercial lens, always aiming to reduce overheads, optimize sales performance, and maximize customer satisfaction.
+          </p>
+
+          {/* Personal Life / Values */}
+          <p className="text-lg leading-relaxed text-gray-700">
+            When I am away from my dual screens and database schemas, I stay grounded through active pursuits. I am a keen soccer player and an avid table tennis enthusiast, activities that sharpen my tactical thinking, split-second decision-making, and teamwork. Balancing my professional goals with a dedicated family life and digital content creation keeps me disciplined, highly organized, and constantly eager to learn and adapt to new challenges.
+          </p>
         </motion.div>
       </div>
     </>
