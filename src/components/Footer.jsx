@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 import React from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,6 +12,13 @@ const Footer = () => {
           <Mail className="w-5 h-5 text-blue-400" />
           <a href="mailto:kaiblinds@gmail.com" className="hover:text-white">
             eunkyuchloe@gmail.com
+          </a>
+        </div>
+         <div className="flex items-center gap-3">
+          <Linkedin className="w-5 h-5 text-blue-400" />
+          <a href="https://www.linkedin.com/in/kyu-jeon-a224a0222/" target="_blank" rel="noreferrer"
+          className="hover:text-white">
+            Visit my LinkedIn
           </a>
         </div>
         {/* <div className="flex items-center gap-3">
