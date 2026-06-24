@@ -164,7 +164,7 @@ const Dashboard = () => {
       <section className="flex gap-4">
 
         <a
-          href="https://github.com/YOUR_GITHUB"
+          href="https://github.com/eunbiggabi/blinds-sales-analytics"
           target="_blank"
           rel="noreferrer"
           className="bg-black text-white px-6 py-3 rounded-lg"
@@ -173,7 +173,7 @@ const Dashboard = () => {
         </a>
 
         <a
-          href="/SalesDashboard.pbix"
+          href="/blinds_data_analysis.pbix"
           download
           className="bg-blue-600 text-white px-6 py-3 rounded-lg"
         >
